@@ -63,12 +63,12 @@ function deleteTask(){
 }
 
 function saveData() {
-    localStorage.setItem("data", list.innerHTML);
+    localStorage.setItem("tasks", list.innerHTML);
     console.log('salvou')
 }
 
 function showTasksSaved() {
-    list.innerHTML = localStorage.getItem("data");
+    list.innerHTML = localStorage.getItem("tasks");
     list.style.marginTop = '0px';
     if(list.innerHTML == ''){
         list.style.marginTop = '-20px'
